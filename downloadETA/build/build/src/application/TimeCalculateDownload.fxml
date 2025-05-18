@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TimeCalculateDownloadController">
+   <children>
+      <TextField fx:id="fieldu" layoutX="60.0" layoutY="72.0" onAction="#OnAction" promptText="Type size here.">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <TextField fx:id="fieldd" layoutX="60.0" layoutY="175.0" onAction="#OnAction" promptText="Type speed here.">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <RadioButton fx:id="radio1" layoutX="300.0" layoutY="77.0" mnemonicParsing="false" text="GB">
+         <toggleGroup>
+            <ToggleGroup fx:id="size" />
+         </toggleGroup>
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </RadioButton>
+      <RadioButton layoutX="377.0" layoutY="77.0" mnemonicParsing="false" text="MB" toggleGroup="$size">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio4" layoutX="376.0" layoutY="181.0" mnemonicParsing="false" text="KB/s">
+         <toggleGroup>
+            <ToggleGroup fx:id="speed" />
+         </toggleGroup>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio5" layoutX="447.0" layoutY="182.0" mnemonicParsing="false" text="Mbit/s" toggleGroup="$speed">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radio3" layoutX="295.0" layoutY="182.0" mnemonicParsing="false" text="MB/s" toggleGroup="$speed">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="label" alignment="CENTER" layoutX="84.0" layoutY="250.0" prefHeight="86.0" prefWidth="432.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
